@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,24 +14,44 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomnom" translatesAutoresizingMaskIntoConstraints="NO" id="VPH-To-KWQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnp-Cz-DNc">
-                                <rect key="frame" x="128" y="294" width="118" height="30"/>
-                                <state key="normal" title="Logo Tapped"/>
+                                <rect key="frame" x="101" y="431" width="118" height="30"/>
+                                <state key="normal" title="Yes!"/>
                                 <connections>
-                                    <segue destination="33V-de-dcx" kind="presentation" id="QVN-8b-vy7"/>
+                                    <segue destination="LwL-GZ-wBM" kind="show" id="pjU-MX-DcT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="361"/>
+            <point key="canvasLocation" x="-263" y="346"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="80D-PP-zTL">
+            <objects>
+                <navigationController id="LwL-GZ-wBM" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zXG-VX-rR6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="33V-de-dcx" kind="relationship" relationship="rootViewController" id="Ata-u0-CaN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLp-rZ-TjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="346"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JVo-C2-Id0">
@@ -42,7 +62,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hWS-o9-9Cx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cy5-Mz-5Kz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N60-J3-Nha">
@@ -66,18 +86,22 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adc-2M-F7I">
                                 <rect key="frame" x="254" y="28" width="46" height="30"/>
                                 <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="yDT-ga-vej" kind="presentation" id="0Sh-h6-3MQ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" id="S0P-0E-AHg">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="MGa-hT-TrK">
+                            <connections>
+                                <segue destination="yDT-ga-vej" kind="show" id="FMs-xo-j5y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLa-Ug-pv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="361"/>
+            <point key="canvasLocation" x="491" y="346"/>
         </scene>
         <!--Clarify Recognition View Controller-->
         <scene sceneID="T6h-K5-mZy">
@@ -88,48 +112,98 @@
                         <viewControllerLayoutGuide type="bottom" id="ON3-1s-Fja"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n78-Zp-kQh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image4" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-vx-AR0">
-                                <rect key="frame" x="0.0" y="44" width="375" height="384"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="13046252_996161960437545_2049456090_n" translatesAutoresizingMaskIntoConstraints="NO" id="unQ-m6-ZIJ">
+                                <rect key="frame" x="20" y="83" width="280" height="319"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVx-eo-eQu">
-                                <rect key="frame" x="227" y="486" width="99" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Like"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image4" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-vx-AR0">
+                                <rect key="frame" x="34" y="94" width="250" height="250"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVx-eo-eQu">
+                                <rect key="frame" x="210" y="448" width="100" height="100"/>
+                                <state key="normal" title="Like" image="Checked-500"/>
                                 <connections>
                                     <action selector="likeButtonPressed:" destination="yDT-ga-vej" eventType="touchUpInside" id="ZDd-ZL-QX6"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2P-mk-EKW">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="LGe-NH-LLX">
+                                    <navigationItem id="LGe-NH-LLX">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="vEE-Dn-taY"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Results" id="btr-M9-pLR"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Results" id="3KV-wV-Cg0"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTA-R6-E6w">
-                                <rect key="frame" x="35" y="480" width="100" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Dislike"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTA-R6-E6w">
+                                <rect key="frame" x="10" y="448" width="100" height="100"/>
+                                <state key="normal" title="Dislike" image="Cancel-500 (1)"/>
                                 <connections>
                                     <action selector="dislikeButtonPressed:" destination="yDT-ga-vej" eventType="touchUpInside" id="NDv-lN-kSf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-AP-Gaf">
+                                <rect key="frame" x="34" y="368" width="39" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" id="ak4-rG-pGR">
+                        <barButtonItem key="rightBarButtonItem" image="Bulleted List Filled-25" id="k7I-lB-OdK">
+                            <connections>
+                                <segue destination="u06-t8-OgQ" kind="show" id="isc-6p-LRU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imageView" destination="zG5-vx-AR0" id="rL3-GO-LYC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFL-xO-XaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232.5" y="360.5"/>
+            <point key="canvasLocation" x="888" y="346"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="ajW-ek-eIz">
+            <objects>
+                <viewController id="u06-t8-OgQ" customClass="ResultsViewController" customModule="NomNom" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IFu-B0-m22"/>
+                        <viewControllerLayoutGuide type="bottom" id="gC6-3u-8jX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="028-gx-aoO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="129" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GmL-4T-Cic">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="ecx-S0-BCk">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="129"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecx-S0-BCk" id="7Rb-qN-MSh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HDr-8V-gRF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2t-Cq-GXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="346"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="ClT-pe-plp">
@@ -161,6 +235,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="13046252_996161960437545_2049456090_n" width="324" height="357"/>
+        <image name="Bulleted List Filled-25" width="25" height="25"/>
+        <image name="Cancel-500 (1)" width="500" height="500"/>
+        <image name="Checked-500" width="500" height="500"/>
         <image name="Image4" width="1000" height="750"/>
+        <image name="nomnom" width="375" height="667"/>
     </resources>
 </document>

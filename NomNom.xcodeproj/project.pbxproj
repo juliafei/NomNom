@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1527CD141CC2EFC9006BC65D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527CD131CC2EFC9006BC65D /* ResultsViewController.swift */; };
 		D8FE1E231CC2996B00D878BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E221CC2996B00D878BD /* AppDelegate.swift */; };
 		D8FE1E251CC2996B00D878BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E241CC2996B00D878BD /* ViewController.swift */; };
 		D8FE1E281CC2996C00D878BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E261CC2996C00D878BD /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1527CD131CC2EFC9006BC65D /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		D8FE1E1F1CC2996B00D878BD /* NomNom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NomNom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FE1E221CC2996B00D878BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FE1E241CC2996B00D878BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1527CD121CC2EFAD006BC65D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1527CD131CC2EFC9006BC65D /* ResultsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		D8FE1E161CC2996B00D878BD = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		D8FE1E211CC2996B00D878BD /* NomNom */ = {
 			isa = PBXGroup;
 			children = (
+				1527CD121CC2EFAD006BC65D /* View Controllers */,
 				D8FE1E831CC2AB8F00D878BD /* ClarifyRecognitionViewController.swift */,
 				D8FE1E811CC2A83500D878BD /* Credentials.swift */,
 				D8FE1E221CC2996B00D878BD /* AppDelegate.swift */,
@@ -389,6 +400,7 @@
 				D8FE1E231CC2996B00D878BD /* AppDelegate.swift in Sources */,
 				D8FE1E691CC2A65500D878BD /* AFURLSessionManager.m in Sources */,
 				D8FE1E5B1CC2A51100D878BD /* AFURLConnectionOperation.m in Sources */,
+				1527CD141CC2EFC9006BC65D /* ResultsViewController.swift in Sources */,
 				D8FE1E541CC2A48300D878BD /* ClarifyClient.m in Sources */,
 				D8FE1E841CC2AB8F00D878BD /* ClarifyRecognitionViewController.swift in Sources */,
 				D8FE1E821CC2A83500D878BD /* Credentials.swift in Sources */,
