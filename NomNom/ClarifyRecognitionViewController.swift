@@ -43,7 +43,7 @@ class ClarifyRecognitionViewController: UIViewController, UIImagePickerControlle
         
         
         
-       imageView.image = UIImage(named: "Image\(arc4random_uniform(3) + 1)")
+       imageView.image = UIImage(named: "Image\(arc4random_uniform(8) + 1)")
         
         
         
@@ -51,7 +51,7 @@ class ClarifyRecognitionViewController: UIViewController, UIImagePickerControlle
     }
     
     @IBAction func dislikeButtonPressed(sender: UIButton) {
-       imageView.image = UIImage(named: "Image\(arc4random_uniform(3) + 1)")
+       imageView.image = UIImage(named: "Image\(arc4random_uniform(8) + 1)")
         
     }
     

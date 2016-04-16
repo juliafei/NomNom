@@ -11,7 +11,7 @@
 		D8FE1E231CC2996B00D878BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E221CC2996B00D878BD /* AppDelegate.swift */; };
 		D8FE1E251CC2996B00D878BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E241CC2996B00D878BD /* ViewController.swift */; };
 		D8FE1E281CC2996C00D878BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E261CC2996C00D878BD /* Main.storyboard */; };
-		D8FE1E2A1CC2996C00D878BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E291CC2996C00D878BD /* Assets.xcassets */; };
+		D8FE1E2A1CC2996C00D878BD /* Im.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E291CC2996C00D878BD /* Im.xcassets */; };
 		D8FE1E2D1CC2996C00D878BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E2B1CC2996C00D878BD /* LaunchScreen.storyboard */; };
 		D8FE1E381CC2996C00D878BD /* NomNomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E371CC2996C00D878BD /* NomNomTests.swift */; };
 		D8FE1E431CC2996C00D878BD /* NomNomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E421CC2996C00D878BD /* NomNomUITests.swift */; };
@@ -56,7 +56,7 @@
 		D8FE1E221CC2996B00D878BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FE1E241CC2996B00D878BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8FE1E271CC2996C00D878BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8FE1E291CC2996C00D878BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8FE1E291CC2996C00D878BD /* Im.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Im.xcassets; sourceTree = "<group>"; };
 		D8FE1E2C1CC2996C00D878BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8FE1E2E1CC2996C00D878BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FE1E331CC2996C00D878BD /* NomNomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomNomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +162,7 @@
 				D8FE1E521CC2A39700D878BD /* NomNom-Bridging-Header.h */,
 				D8FE1E241CC2996B00D878BD /* ViewController.swift */,
 				D8FE1E261CC2996C00D878BD /* Main.storyboard */,
-				D8FE1E291CC2996C00D878BD /* Assets.xcassets */,
+				D8FE1E291CC2996C00D878BD /* Im.xcassets */,
 				D8FE1E2B1CC2996C00D878BD /* LaunchScreen.storyboard */,
 				D8FE1E2E1CC2996C00D878BD /* Info.plist */,
 			);
@@ -365,7 +365,7 @@
 				D8FE1E7F1CC2A79400D878BD /* Podfile in Resources */,
 				D8FE1E7B1CC2A77100D878BD /* Pods-ClarifaiApiDemo.debug.xcconfig in Resources */,
 				D8FE1E2D1CC2996C00D878BD /* LaunchScreen.storyboard in Resources */,
-				D8FE1E2A1CC2996C00D878BD /* Assets.xcassets in Resources */,
+				D8FE1E2A1CC2996C00D878BD /* Im.xcassets in Resources */,
 				D8FE1E7D1CC2A77900D878BD /* Pods-ClarifaiApiDemo.release.xcconfig in Resources */,
 				D8FE1E281CC2996C00D878BD /* Main.storyboard in Resources */,
 			);
