@@ -22,7 +22,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnp-Cz-DNc">
                                 <rect key="frame" x="101" y="431" width="118" height="30"/>
-                                <state key="normal" title="Yes!"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Yes!">
+                                    <color key="titleColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="LwL-GZ-wBM" kind="show" id="pjU-MX-DcT"/>
                                 </connections>
@@ -53,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="134" y="346"/>
         </scene>
-        <!--View Controller-->
+        <!--Preferences View Controller-->
         <scene sceneID="JVo-C2-Id0">
             <objects>
-                <viewController id="33V-de-dcx" sceneMemberID="viewController">
+                <viewController id="33V-de-dcx" customClass="preferencesViewController" customModule="NomNom" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Shl-h3-Nb0"/>
                         <viewControllerLayoutGuide type="bottom" id="hWS-o9-9Cx"/>
@@ -102,6 +105,48 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="priceanddistanceVC" translatesAutoresizingMaskIntoConstraints="NO" id="MID-p8-xwA">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TND-uv-VKf">
+                                <rect key="frame" x="29" y="428" width="273" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="milesChanged:" destination="33V-de-dcx" eventType="valueChanged" id="4cP-9x-4ST"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xtD-yL-3FJ">
+                                <rect key="frame" x="29" y="239" width="273" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.59999999999999998" green="0.36862745098039218" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="33V-de-dcx" eventType="valueChanged" id="v8C-6t-UvM"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9e-3L-Ivt">
+                                <rect key="frame" x="91" y="217" width="26" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vq-Q9-u5e">
+                                <rect key="frame" x="206" y="217" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-Yc-3xH">
+                                <rect key="frame" x="114" y="387" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF2-LD-V0r" userLabel="Max Price">
+                                <rect key="frame" x="240" y="217" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -113,6 +158,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="maxMiles" destination="GtW-Yc-3xH" id="rFJ-SQ-kC6"/>
+                        <outlet property="maxPrice" destination="zF2-LD-V0r" id="sHk-7Q-3FS"/>
+                        <outlet property="slider" destination="xtD-yL-3FJ" id="6eP-HG-lGO"/>
+                        <outlet property="slider2" destination="TND-uv-VKf" id="2DJ-p5-IX5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLa-Ug-pv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,11 +261,11 @@ New York, NY 10011</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z00-uq-oDc">
-                                <rect key="frame" x="84" y="264" width="230" height="88"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-sx-8al">
+                                <rect key="frame" x="84" y="167" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Saigon Shack                              114 Macdougal St
-New York, NY 10012</string>
+                                <string key="text">Pokéworks                                      63 W 37th St
+New York, NY 10018</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -241,11 +292,11 @@ New York, NY 10002</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LosTacos" translatesAutoresizingMaskIntoConstraints="NO" id="92c-gp-7mx">
                                 <rect key="frame" x="9" y="482" width="49" height="42"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-sx-8al">
-                                <rect key="frame" x="84" y="167" width="230" height="88"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z00-uq-oDc">
+                                <rect key="frame" x="84" y="264" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Pokéworks                                      63 W 37th St
-New York, NY 10018</string>
+                                <string key="text">Saigon Shack                              114 Macdougal St
+New York, NY 10012</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
