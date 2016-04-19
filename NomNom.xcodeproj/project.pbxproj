@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1527CD141CC2EFC9006BC65D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527CD131CC2EFC9006BC65D /* ResultsViewController.swift */; };
+		D80FB06B1CC30AC0001767EF /* preferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FB06A1CC30AC0001767EF /* preferencesViewController.swift */; };
 		D8FE1E231CC2996B00D878BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E221CC2996B00D878BD /* AppDelegate.swift */; };
 		D8FE1E251CC2996B00D878BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E241CC2996B00D878BD /* ViewController.swift */; };
 		D8FE1E281CC2996C00D878BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E261CC2996C00D878BD /* Main.storyboard */; };
-		D8FE1E2A1CC2996C00D878BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E291CC2996C00D878BD /* Assets.xcassets */; };
+		D8FE1E2A1CC2996C00D878BD /* Im.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E291CC2996C00D878BD /* Im.xcassets */; };
 		D8FE1E2D1CC2996C00D878BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FE1E2B1CC2996C00D878BD /* LaunchScreen.storyboard */; };
 		D8FE1E381CC2996C00D878BD /* NomNomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E371CC2996C00D878BD /* NomNomTests.swift */; };
 		D8FE1E431CC2996C00D878BD /* NomNomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE1E421CC2996C00D878BD /* NomNomUITests.swift */; };
@@ -52,11 +53,12 @@
 
 /* Begin PBXFileReference section */
 		1527CD131CC2EFC9006BC65D /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D80FB06A1CC30AC0001767EF /* preferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preferencesViewController.swift; sourceTree = "<group>"; };
 		D8FE1E1F1CC2996B00D878BD /* NomNom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NomNom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FE1E221CC2996B00D878BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FE1E241CC2996B00D878BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8FE1E271CC2996C00D878BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8FE1E291CC2996C00D878BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8FE1E291CC2996C00D878BD /* Im.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Im.xcassets; sourceTree = "<group>"; };
 		D8FE1E2C1CC2996C00D878BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8FE1E2E1CC2996C00D878BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FE1E331CC2996C00D878BD /* NomNomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomNomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1527CD131CC2EFC9006BC65D /* ResultsViewController.swift */,
+				D80FB06A1CC30AC0001767EF /* preferencesViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -162,7 +165,7 @@
 				D8FE1E521CC2A39700D878BD /* NomNom-Bridging-Header.h */,
 				D8FE1E241CC2996B00D878BD /* ViewController.swift */,
 				D8FE1E261CC2996C00D878BD /* Main.storyboard */,
-				D8FE1E291CC2996C00D878BD /* Assets.xcassets */,
+				D8FE1E291CC2996C00D878BD /* Im.xcassets */,
 				D8FE1E2B1CC2996C00D878BD /* LaunchScreen.storyboard */,
 				D8FE1E2E1CC2996C00D878BD /* Info.plist */,
 			);
@@ -365,7 +368,7 @@
 				D8FE1E7F1CC2A79400D878BD /* Podfile in Resources */,
 				D8FE1E7B1CC2A77100D878BD /* Pods-ClarifaiApiDemo.debug.xcconfig in Resources */,
 				D8FE1E2D1CC2996C00D878BD /* LaunchScreen.storyboard in Resources */,
-				D8FE1E2A1CC2996C00D878BD /* Assets.xcassets in Resources */,
+				D8FE1E2A1CC2996C00D878BD /* Im.xcassets in Resources */,
 				D8FE1E7D1CC2A77900D878BD /* Pods-ClarifaiApiDemo.release.xcconfig in Resources */,
 				D8FE1E281CC2996C00D878BD /* Main.storyboard in Resources */,
 			);
@@ -403,6 +406,7 @@
 				1527CD141CC2EFC9006BC65D /* ResultsViewController.swift in Sources */,
 				D8FE1E541CC2A48300D878BD /* ClarifyClient.m in Sources */,
 				D8FE1E841CC2AB8F00D878BD /* ClarifyRecognitionViewController.swift in Sources */,
+				D80FB06B1CC30AC0001767EF /* preferencesViewController.swift in Sources */,
 				D8FE1E821CC2A83500D878BD /* Credentials.swift in Sources */,
 				D8FE1E611CC2A53400D878BD /* AFHTTPRequestOperationManager.m in Sources */,
 				D8FE1E6F1CC2A6FB00D878BD /* AFSecurityPolicy.m in Sources */,
