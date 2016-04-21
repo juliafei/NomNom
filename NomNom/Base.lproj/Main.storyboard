@@ -14,14 +14,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomnom" translatesAutoresizingMaskIntoConstraints="NO" id="VPH-To-KWQ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnp-Cz-DNc">
-                                <rect key="frame" x="101" y="431" width="118" height="30"/>
+                                <rect key="frame" x="128" y="526" width="118" height="30"/>
                                 <color key="backgroundColor" red="0.18823529411764706" green="0.094117647058823528" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Yes!">
                                     <color key="titleColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,17 +33,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="346"/>
+            <point key="canvasLocation" x="-263.5" y="345.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="80D-PP-zTL">
             <objects>
                 <navigationController id="LwL-GZ-wBM" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zXG-VX-rR6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -65,7 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hWS-o9-9Cx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cy5-Mz-5Kz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5o-Qc-gby">
@@ -103,19 +103,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="priceanddistanceVC" translatesAutoresizingMaskIntoConstraints="NO" id="MID-p8-xwA">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TND-uv-VKf">
-                                <rect key="frame" x="29" y="428" width="273" height="31"/>
-                                <color key="minimumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="maximumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="milesChanged:" destination="33V-de-dcx" eventType="valueChanged" id="4cP-9x-4ST"/>
-                                </connections>
-                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xtD-yL-3FJ">
-                                <rect key="frame" x="29" y="239" width="273" height="31"/>
+                                <rect key="frame" x="51" y="271" width="273" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.59999999999999998" green="0.36862745098039218" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -147,6 +138,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TND-uv-VKf">
+                                <rect key="frame" x="51" y="429" width="273" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.59999999999999998" green="0.36862745099999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="milesChanged:" destination="33V-de-dcx" eventType="valueChanged" id="4cP-9x-4ST"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -157,7 +157,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="maxMiles" destination="GtW-Yc-3xH" id="rFJ-SQ-kC6"/>
                         <outlet property="maxPrice" destination="zF2-LD-V0r" id="sHk-7Q-3FS"/>
@@ -167,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLa-Ug-pv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="346"/>
+            <point key="canvasLocation" x="532.5" y="345.5"/>
         </scene>
         <!--Clarify Recognition View Controller-->
         <scene sceneID="T6h-K5-mZy">
@@ -178,17 +178,14 @@
                         <viewControllerLayoutGuide type="bottom" id="ON3-1s-Fja"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n78-Zp-kQh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="13046252_996161960437545_2049456090_n" translatesAutoresizingMaskIntoConstraints="NO" id="unQ-m6-ZIJ">
-                                <rect key="frame" x="20" y="83" width="280" height="319"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image4" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-vx-AR0">
-                                <rect key="frame" x="34" y="94" width="250" height="250"/>
+                                <rect key="frame" x="11" y="83" width="344" height="358"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVx-eo-eQu">
-                                <rect key="frame" x="210" y="448" width="100" height="100"/>
+                                <rect key="frame" x="255" y="492" width="100" height="100"/>
                                 <state key="normal" title="Like" image="yesIcon"/>
                                 <connections>
                                     <action selector="likeButtonPressed:" destination="yDT-ga-vej" eventType="touchUpInside" id="ZDd-ZL-QX6"/>
@@ -204,12 +201,15 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTA-R6-E6w">
-                                <rect key="frame" x="10" y="448" width="100" height="100"/>
+                                <rect key="frame" x="28" y="492" width="100" height="100"/>
                                 <state key="normal" title="Dislike" image="noIcon"/>
                                 <connections>
                                     <action selector="dislikeButtonPressed:" destination="yDT-ga-vej" eventType="touchUpInside" id="NDv-lN-kSf"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image4" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-vx-AR0">
+                                <rect key="frame" x="28" y="93" width="311" height="287"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -220,14 +220,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageView" destination="zG5-vx-AR0" id="rL3-GO-LYC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFL-xO-XaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="346"/>
+            <point key="canvasLocation" x="923.5" y="345.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WRo-Mv-hCv">
@@ -238,14 +238,14 @@
                         <viewControllerLayoutGuide type="bottom" id="8bv-F9-heV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y2D-pR-vuS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NomList" translatesAutoresizingMaskIntoConstraints="NO" id="ucB-Gm-IZR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yGr-cM-PTk">
-                                <rect key="frame" x="84" y="362" width="230" height="88"/>
+                                <rect key="frame" x="118" y="432" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Sweet                                         343 Garden St
 Hoboken, NJ 07030</string>
@@ -253,7 +253,7 @@ Hoboken, NJ 07030</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDQ-XC-2Tu">
-                                <rect key="frame" x="84" y="458" width="230" height="88"/>
+                                <rect key="frame" x="118" y="545" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Los Tacos No.1                                  Chelsea Market
 75 9th Ave
@@ -262,27 +262,24 @@ New York, NY 10011</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-sx-8al">
-                                <rect key="frame" x="84" y="167" width="230" height="88"/>
+                                <rect key="frame" x="118" y="201" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Pokéworks                                      63 W 37th St
 New York, NY 10018</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sweet" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-ze-gbA">
-                                <rect key="frame" x="9" y="385" width="49" height="42"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SaigonShack" translatesAutoresizingMaskIntoConstraints="NO" id="DJl-zm-q1Y">
-                                <rect key="frame" x="9" y="287" width="49" height="42"/>
+                                <rect key="frame" x="9" y="337" width="58" height="50"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pokeworks" translatesAutoresizingMaskIntoConstraints="NO" id="rRy-tA-6gn">
-                                <rect key="frame" x="9" y="191" width="49" height="42"/>
+                                <rect key="frame" x="9" y="224" width="58" height="49"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CheekySandwiches" translatesAutoresizingMaskIntoConstraints="NO" id="Js1-WV-x2Y">
-                                <rect key="frame" x="9" y="94" width="49" height="42"/>
+                                <rect key="frame" x="9" y="111" width="58" height="47"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2C-CQ-zyQ">
-                                <rect key="frame" x="84" y="71" width="230" height="88"/>
+                                <rect key="frame" x="118" y="94" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Cheeky Sandwiches                   Orchard St
 New York, NY 10002</string>
@@ -290,24 +287,27 @@ New York, NY 10002</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LosTacos" translatesAutoresizingMaskIntoConstraints="NO" id="92c-gp-7mx">
-                                <rect key="frame" x="9" y="482" width="49" height="42"/>
+                                <rect key="frame" x="14" y="568" width="53" height="47"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z00-uq-oDc">
-                                <rect key="frame" x="84" y="264" width="230" height="88"/>
+                                <rect key="frame" x="118" y="319" width="230" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Saigon Shack                              114 Macdougal St
 New York, NY 10012</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sweet" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-ze-gbA">
+                                <rect key="frame" x="9" y="455" width="58" height="49"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FC-4K-ti8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="346"/>
+            <point key="canvasLocation" x="1356.5" y="345.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="ClT-pe-plp">
